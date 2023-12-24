@@ -39,13 +39,13 @@ export class ListaProductoComponent {
       this.productoService.delete(id).subscribe(
         {
           next: data => {
-            this.toastr.success('Producto Eliminado', 'OK', {
+            this.toastr.success('Producto Eliminado', 'OK', {   // Notificación si se elimina por 3 segundos
               timeOut: 3000, positionClass: 'toast-top-center'
               });
               this.cargarProductos();
           },
           error: err => {
-            this.toastr.error(err.error.mensaje, 'Fail', {
+            this.toastr.error(err.error.mensaje, 'Fail', {    // Notificación si falla eliminar por 3 segundos
               timeOut: 3000, positionClass: 'toast-top-center',
             });
           }
