@@ -8,6 +8,7 @@ import { DetalleProductoComponent } from './producto/detalle-producto.component'
 import { NuevoProductoComponent } from './producto/nuevo-producto.component';
 import { EditarProductoComponent } from './producto/editar-producto.component';
 
+// importar el cliente y el formulario module
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
