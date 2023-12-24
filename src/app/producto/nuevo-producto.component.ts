@@ -29,14 +29,14 @@ export class NuevoProductoComponent {
     const producto = new Producto(this.nombre, this.precio);
       this.productoService.save(producto).subscribe({
         next: data => {
-          this.toastr.success('Producto creado', 'OK', {      // Notificación por 3 segundos
+          this.toastr.success('Producto creado', 'OK', {      // Notificación si se crea por 3 segundos
             timeOut: 3000, positionClass: 'toast-top-center' 
           });
           this.router.navigate(['/']);
         },
         error: err => {
           this.toastr.error(err.error.mensaje, 'Fail', {
-            timeOut: 3000, positionClass: 'toast-top-center',
+            timeOut: 3000, positionClass: 'toast-top-center', // Notificación si falla por 3 segundos 
           });
           this.router.navigate(['/']);
         }
