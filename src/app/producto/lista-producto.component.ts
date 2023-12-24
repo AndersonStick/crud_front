@@ -12,9 +12,10 @@ export class ListaProductoComponent {
 
   productos: Producto[] = [];
 
-  constructor(private productoService: ProductoService, 
+  constructor(
+    private productoService: ProductoService, 
     private toastr: ToastrService
-    ) { }
+  ) { }
 
   ngOnInit() {
     this.cargarProductos();

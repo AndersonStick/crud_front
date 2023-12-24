@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductoService } from '../service/producto.service';
-import { ActivatedRoute, Router, TitleStrategy } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Producto } from '../models/producto';
 
