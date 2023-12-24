@@ -10,8 +10,7 @@ const routes: Routes = [
   {path: 'detalle/:id', component: DetalleProductoComponent},
   {path: 'nuevo', component: NuevoProductoComponent},
   {path: 'editar/:id', component: EditarProductoComponent},
-  {path: '**', redirectTo: '', pathMatch: 'full'}
-
+  {path: '**', redirectTo: '', pathMatch: 'full'} // Si no es ninguna de las rutas, redirige.
 ];
 
 @NgModule({

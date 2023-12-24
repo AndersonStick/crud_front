@@ -35,7 +35,7 @@ export class ProductoService {
 
   // Actualizar un producto por id
   public update(id: number, producto: Producto): Observable<any> {
-    return this.httpClient.put<any>(this.productoURL + `/update/${id}`, producto); 
+    return this.httpClient.put<any>(this.productoURL + `/update/${id}`, producto); // Request body por ser put
   }
 
   // Borrar un producto por id
